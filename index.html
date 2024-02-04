@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoservice "Мастерский ремонт" - Быстро. Качественно. Доступно.</title>
+
+  <link rel="preload" href="./fonts/raleway-v29-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/raleway-v29-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/raleway-v29-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/raleway-v29-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/index.css">
+  <script type="module" src="./js/index.js"></script>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container header__container">
+      <img class="header__logo" src="./img/logo.svg" alt="Логотип автосервиса Мастерский ремонт" width="254" height="40">      
+      <a class="header__link btn" href="#order">Выбрать специалиста</a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Autoservice - ремонт автомобилей, запишись онлайн</h1>
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero__title">
+          <span class="hero__title-up">Мастерский</span>
+          <span class="hero__title-down">Ремонт</span>
+        </h2>
+
+        <div class="hero__content">
+          <p class="hero__year">
+            <time datetime="2018">с&nbsp;2018 года</time>
+          </p>
+          <p class="hero__tagline">Быстро. Качественно. Доступно.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__bg">
+        <div class="container about__container">
+          <h2 class="about__title">Почему <span class="about__title_black">мы</span></h2>
+          <p class="about__text">С&nbsp;момента основания нашей автомастерской мы&nbsp;уделяем особое внимание каждой детали и&nbsp;работаем с&nbsp;любыми марками автомобилей.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <div class="container">
+        <h2 class="order__title">Заполните форму <span class="order__title_red">и&nbsp;мы свяжемся с&nbsp;вами</span></h2>
+
+        <form class="order__form form">
+          <fieldset class="form__fieldset form__fieldset_type form__fieldset_active">
+            <legend class="form__title">Выберите нужное направление</legend>
+
+            <div class="form__radio-wrapper form__radio-wrapper_type">
+              <!-- данные приходят с сервера -->
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset_date">
+            <legend class="form__title">Выберите дату и&nbsp;время</legend>
+
+            <div class="form__months">
+              <!-- данные приходят с сервера -->
+            </div>
+
+            <div class="form__radio-wrapper form__radio-wrapper_day">
+              <!-- данные приходят с сервера -->
+            </div>
+
+            <div class="form__time">
+              <p class="form__subtitle">Доступное время:</p>
+
+              <div class="form__radio-wrapper form__radio-wrapper_time">
+                <!-- данные приходят с сервера -->
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset_client">
+            <legend class="form__title">Заполните поля</legend>
+
+            <div class="form__input-wrapper">
+              <input class="form__input" type="text" name="name" placeholder="Имя">
+              <input class="form__input" type="text" name="phone" placeholder="Телефон">
+              <input class="form__input" type="text" name="car" placeholder="Модель и марка автомобиля">
+              <input class="form__input" type="text" name="year" placeholder="Год выпуска">
+            </div>
+
+            <p class="form__info form__info_type">Диагностика и&nbsp;ремонт двигателей</p>
+            <p class="form__info">
+              <time class="form__info-date" datetime="2024">
+                <span>03.02</span>
+                <span>14:00</span>
+              </time>
+            </p>
+          </fieldset>
+
+          <div class="form__btns-wrapper">
+            <button class="btn form__btn form__btn_prev" type="button">
+              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967L5.24264 0.696699C5.53553 0.403806 6.01041 0.403806 6.3033 0.696699C6.59619 0.989593 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.46967 6.53033ZM13 6.75H1V5.25H13V6.75Z" fill="currentColor"/>
+              </svg>
+              Назад
+            </button>
+
+            <button class="btn form__btn form__btn_next" type="button">
+              Далее
+              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5303 6.53033C12.8232 6.23744 12.8232 5.76256 12.5303 5.46967L7.75736 0.696699C7.46447 0.403806 6.98959 0.403806 6.6967 0.696699C6.40381 0.989593 6.40381 1.46447 6.6967 1.75736L10.9393 6L6.6967 10.2426C6.40381 10.5355 6.40381 11.0104 6.6967 11.3033C6.98959 11.5962 7.46447 11.5962 7.75736 11.3033L12.5303 6.53033ZM0 6.75H12V5.25H0V6.75Z" fill="currentColor"/>
+              </svg>
+            </button>
+
+            <button class="btn form__btn form__btn_submit" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <img class="footer__logo" src="./img/logo.svg" alt="Логотип автосервиса Мастерский ремонт" width="480" height="76">
+      <p class="footer__copyright">&copy; AutoService, 2024</p>
+      <ul class="footer__developers developers">
+        <li class="developers__item">Designer: 
+          <a class="developers__link" href="https://t.me/Mrshmallowww">Anastasia Ilina</a>
+        </li>
+        <li class="developers__item">Developer: 
+          <a class="developers__link" href="https://tshweb.ru">Tatyana Shustrova</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

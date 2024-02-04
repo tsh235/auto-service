@@ -1,0 +1,218 @@
+.order {
+  padding: 84px 0 120px;
+}
+
+.order__title {
+  margin-bottom: 40px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.order__title_red {
+  color: #D10014;
+}
+
+.form {
+  padding: 60px;
+  border-radius: 32px;
+  background-color: #fff;
+}
+
+.form__title {
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.form__fieldset:last-of-type {
+  margin-bottom: 32px;
+}
+
+.form__fieldset {
+  display: none;
+}
+
+.form__fieldset_active {
+  display: block;
+}
+
+.form__radio-wrapper {
+  margin-bottom: 32px;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.form__subtitle {
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.form__months {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.form__btn-month {
+  font-weight: 500;
+}
+
+.form__btn-month_active {
+  color: #D10014;
+}
+
+.form__time {
+  display: none;
+}
+
+.form__input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 8px;
+  margin-bottom: 32px;
+}
+
+.form__input {
+  padding: 12px 18px;
+  background-color: #f0f4f4;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: 0.36s;
+  cursor: pointer;
+  outline: none;
+}
+
+.form__input::placeholder {
+  opacity: 0.4;
+  transition: 0.36s;
+}
+
+.form__input:hover::placeholder {
+  opacity: 1;
+}
+
+.form__input:focus-visible {
+  border-color: #D0D0D0;
+}
+
+.form__info {
+  font-weight: 500;
+}
+
+.form__info + .form__info {
+  margin-top: 4px;
+}
+
+.form__info-date {
+  display: flex;
+  gap: 8px;
+}
+
+.form__btns-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.form__btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.form__btn:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  background-color: #f0f4f4;
+  color: #222;
+}
+
+.form__btn_next,
+.form__btn_submit {
+  background-color: #D10014;
+  color: #fff;
+}
+.form__btn_prev,
+.form__btn_next,
+.form__btn_submit {
+  display: none;
+}
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__label {
+  display: block;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.radio__label:hover {
+  background-color: #E4F0F0;
+}
+
+.radio__input:checked + .radio__label {
+  background-color: #222;
+  color: #fff;
+}
+
+.radio__input:focus-visible + .radio__label {
+  border: 1px solid #D10014;
+}
+
+@media (max-width: 1199px) {
+  .order {
+    padding-top: 60px;
+  }
+  .order__title {
+    margin-bottom: 32px;
+    font-size: 60px;
+  }
+  .form {
+    padding: 40px;
+  }
+  .form__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .order {
+    padding: 50px 0 100px;
+  }
+  .order__title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 680px) {
+  .order {
+    padding: 40px 0 80px;
+  }
+  .order__title {
+    font-size: 32px;
+  }
+  .form {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+  .form__input-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__title {
+    margin-bottom: 24px;
+  }
+}

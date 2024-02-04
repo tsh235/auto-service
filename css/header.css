@@ -1,0 +1,44 @@
+.header {
+  padding-top: 32px;
+  background-color: #222;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header__logo {
+  width: 254px;
+  height: auto;
+}
+
+.header__link {
+  outline: none;
+}
+
+.header__link:hover {
+  background-color: #e4f0f0;
+}
+
+.header__link:focus-visible {
+  border-color: #D10014;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 24px;
+  }
+  .header__logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 680px) {
+  .header {
+    padding: 16px 0 24px;
+  }
+}
